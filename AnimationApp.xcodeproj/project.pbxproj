@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		8414C6F52646E4C9006BB63B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8414C6F32646E4C9006BB63B /* Main.storyboard */; };
 		8414C6F72646E4CB006BB63B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8414C6F62646E4CB006BB63B /* Assets.xcassets */; };
 		8414C6FA2646E4CB006BB63B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8414C6F82646E4CB006BB63B /* LaunchScreen.storyboard */; };
+		8414C70B26483EF7006BB63B /* Extension + ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8414C70A26483EF7006BB63B /* Extension + ViewController.swift */; };
 		90F7D350808F9BF82AB76B93 /* Pods_AnimationApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DB8103765B6C77BE16ABCC5 /* Pods_AnimationApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		8414C6F62646E4CB006BB63B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8414C6F92646E4CB006BB63B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8414C6FB2646E4CB006BB63B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8414C70A26483EF7006BB63B /* Extension + ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + ViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +50,6 @@
 				5C250FBD7A55220EF4F40B51 /* Pods-AnimationApp.debug.xcconfig */,
 				32D8B7103D582088C9FB4682 /* Pods-AnimationApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -88,6 +89,7 @@
 				8414C6F62646E4CB006BB63B /* Assets.xcassets */,
 				8414C6F82646E4CB006BB63B /* LaunchScreen.storyboard */,
 				8414C6FB2646E4CB006BB63B /* Info.plist */,
+				8414C70A26483EF7006BB63B /* Extension + ViewController.swift */,
 			);
 			path = AnimationApp;
 			sourceTree = "<group>";
@@ -206,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8414C70B26483EF7006BB63B /* Extension + ViewController.swift in Sources */,
 				8414C6F22646E4C9006BB63B /* ViewController.swift in Sources */,
 				8414C6EE2646E4C9006BB63B /* AppDelegate.swift in Sources */,
 				8414C6F02646E4C9006BB63B /* SceneDelegate.swift in Sources */,

@@ -17,9 +17,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6u6-VE-I1o" customClass="SpringButton" customModule="Spring">
-                                <rect key="frame" x="70" y="540.66666666666663" width="274" height="48"/>
+                                <rect key="frame" x="70" y="541.66666666666663" width="274" height="47"/>
                                 <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="30"/>
                                 <state key="normal" title="Start Animating">
                                     <color key="titleColor" systemColor="systemIndigoColor"/>
                                 </state>
@@ -28,16 +28,34 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startViewAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dK5-0c-06z"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KAY-0q-N4n" customClass="SpringView" customModule="Spring">
                                 <rect key="frame" x="70" y="70" width="274" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmQ-47-Lxx">
+                                        <rect key="frame" x="0.0" y="0.0" width="274" height="128"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
+                                    <constraint firstItem="gmQ-47-Lxx" firstAttribute="leading" secondItem="KAY-0q-N4n" secondAttribute="leading" id="09m-8n-VL7"/>
+                                    <constraint firstAttribute="bottom" secondItem="gmQ-47-Lxx" secondAttribute="bottom" id="7fL-cg-y2K"/>
                                     <constraint firstAttribute="height" constant="128" id="HUO-Ed-4Po"/>
+                                    <constraint firstAttribute="trailing" secondItem="gmQ-47-Lxx" secondAttribute="trailing" id="OCR-bI-NWv"/>
+                                    <constraint firstItem="gmQ-47-Lxx" firstAttribute="top" secondItem="KAY-0q-N4n" secondAttribute="top" id="d9c-ll-hXN"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -53,10 +71,15 @@
                             <constraint firstItem="6u6-VE-I1o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lGx-mh-9K2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="infoOuputLabel" destination="gmQ-47-Lxx" id="Xoj-eh-Fhk"/>
+                        <outlet property="mainButton" destination="6u6-VE-I1o" id="IoL-DG-R0f"/>
+                        <outlet property="mainView" destination="KAY-0q-N4n" id="fI6-5Q-Tyq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="94"/>
+            <point key="canvasLocation" x="18.840579710144929" y="93.750000000000014"/>
         </scene>
     </scenes>
     <resources>
